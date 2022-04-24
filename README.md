@@ -14,7 +14,7 @@ You then should perform the following:
 ``cargo build``   
 ``diesel setup``   
 ``diesel migration generate profiles_db``   
-``pg_ctl -D /YOUR_PROJECT_PATH/rust-crud-template/profiles_db -l logfile start``        
+``pg_ctl -D /YOUR_PROJECT_PATH/rust-crud-postgres-app/profiles_db -l logfile start``        
 ``diesel migration run``    
 ``cargo run``
 
