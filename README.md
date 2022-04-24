@@ -11,8 +11,13 @@ You need to initialize a new database "profiles_db" in the root directory of thi
 
 You then should perform the following:
 
-``cargo build``
-``diesel setup``
+``cargo build``   
+``diesel setup``   
+``diesel migration generate profiles_db``   
+``pg_ctl -D /Volumes/Glyph/rust-a-heroes-redo/rust-crud-template/profiles_db -l logfile start``        
+``diesel migration run``    
+``cargo run``
+
 
 ###
 other instructions soon...
